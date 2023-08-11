@@ -1,0 +1,32 @@
+logging:
+  level:
+    root: INFO
+    dev.quercusdata: DEBUG
+    org.hibernate.type.descriptor.sql: TRACE
+    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+    org.hibernate.SQL_SLOW: INFO
+  config: classpath:log4j2.properties
+
+spring:
+  data:
+    jpa.repositories.enabled: true
+
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_schema: demojwt
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+
+block:
+  max-block-in-millis: 600000
