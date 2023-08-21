@@ -14,7 +14,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkxNzY2NzIzLCJleHAiOjE2OTE3NjgxNjN9.5ZtdTc9u0Tgu8U_jibeXruJCBtTYbmXhlutMjD5qwXk",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkxNzY4NDA1LCJleHAiOjE2OTE3Njk4NDV9.Hpx91wmOPtCf55bigmXV5wnM6nK5kr6jSJXba7B5yVA",
 							"type": "string"
 						}
 					]
@@ -61,6 +61,46 @@
 						"v1",
 						"auth",
 						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkyNjM1NTM5LCJleHAiOjE2OTI2MzY5Nzl9.QQoMq36t2uxs2gY6_MBlWvqMTGodLDkA2XzvO4pzRLE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"message to send\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/rabbit/send-message",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"rabbit",
+						"send-message"
 					]
 				}
 			},

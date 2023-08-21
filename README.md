@@ -9,4 +9,12 @@ youtube video.
 
 Demo to provide messaging system based on Rabbit MQ
 
+config gotten from[ amigos code tuto](https://www.youtube.com/watch?v=nFxjaVmFj5E)
+
+to execute, first get the jwt token using next endpoints:
+* /api/v1/auth/register
+* /api/v1/auth/authenticate (get the token to use as Bearer on next endpoint)
+* /api/v1/rabbit/send-message to send a message to queue.A
+
+
 
