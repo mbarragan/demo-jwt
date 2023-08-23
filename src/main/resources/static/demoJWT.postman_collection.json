@@ -14,7 +14,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkxNzY4NDA1LCJleHAiOjE2OTE3Njk4NDV9.Hpx91wmOPtCf55bigmXV5wnM6nK5kr6jSJXba7B5yVA",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkyODA3MzAwLCJleHAiOjE2OTI4MDg3NDB9.5gxyc5tOcy5nqeAz0wcZz4H8eZ4uqyLmoP14y1S3A34",
 							"type": "string"
 						}
 					]
@@ -74,7 +74,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkyNjM1NTM5LCJleHAiOjE2OTI2MzY5Nzl9.QQoMq36t2uxs2gY6_MBlWvqMTGodLDkA2XzvO4pzRLE",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwZXBlQG1haWwuY29tIiwiaWF0IjoxNjkyODA3MzAwLCJleHAiOjE2OTI4MDg3NDB9.5gxyc5tOcy5nqeAz0wcZz4H8eZ4uqyLmoP14y1S3A34",
 							"type": "string"
 						}
 					]
@@ -83,7 +83,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"message to send\"\r\n}",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"message to send ii\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -91,7 +91,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/rabbit/send-message",
+					"raw": "localhost:8080/api/v1/rabbit/producer/send-message",
 					"host": [
 						"localhost"
 					],
@@ -100,6 +100,7 @@
 						"api",
 						"v1",
 						"rabbit",
+						"producer",
 						"send-message"
 					]
 				}

@@ -12,13 +12,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
+import static dev.quercusdata.demojwt.domain.utils.Constants.*;
+
 @Configuration
 public class RabbitMQConfiguration {
-    private static final String ROUTING_A = "routing.A";
-    private static final String ROUTING_B = "routing.B";
-    private static final String QUEUE_A = "queue.A";
-    private static final String QUEUE_B = "queue.B";
-
 
     @Bean
     @Primary
