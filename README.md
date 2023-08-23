@@ -6,6 +6,7 @@ youtube video.
 * Key created on the web[ https://www.grc.com/passwords.htm](https://www.grc.com/passwords.htm)
 * Detected an issue with "deprecated" methods on Spring version over 3.0.5
 * Added a postman collection.
+* Hexagonal structure.
 
 Demo to provide messaging system based on Rabbit MQ
 
@@ -14,7 +15,9 @@ config gotten from[ amigos code tuto](https://www.youtube.com/watch?v=nFxjaVmFj5
 to execute, first get the jwt token using next endpoints:
 * /api/v1/auth/register
 * /api/v1/auth/authenticate (get the token to use as Bearer on next endpoint)
-* /api/v1/rabbit/send-message to send a message to queue.A
+* /api/v1/rabbit/producer/send-message to send a message to queue.A
+
+Consumer will show the produced message immediately in log
 
 
 
